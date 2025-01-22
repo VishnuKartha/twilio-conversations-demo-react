@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
   if (!token) {
     return (
-      <Theme.Provider theme="dark">
+      <Theme.Provider theme="default">
         <Router>
           <Box
             style={{
@@ -30,7 +30,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <Theme.Provider theme="dark">
+    <Theme.Provider theme="default">
       <Router>
         <Box
           style={{
