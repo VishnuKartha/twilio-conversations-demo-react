@@ -9,7 +9,6 @@ import Login from "./components/login/login";
 import AppContainer from "./components/AppContainer";
 import { Box } from "@twilio-paste/core";
 import { Theme } from "@twilio-paste/theme";
-import { gradients } from "./styles/theme";
 
 const App: React.FC = () => {
   const [token, setToken] = useState<string>("");
@@ -21,7 +20,6 @@ const App: React.FC = () => {
           <Box
             style={{
               minHeight: "100vh",
-              background: gradients.background,
             }}
           >
             <Login setToken={setToken} />
@@ -37,7 +35,6 @@ const App: React.FC = () => {
         <Box
           style={{
             minHeight: "100vh",
-            background: gradients.background,
           }}
         >
           <Switch>
